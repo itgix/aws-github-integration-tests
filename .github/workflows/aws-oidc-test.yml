@@ -19,7 +19,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::767398095708:role/itgix-landing-zone-github-integration
-          aws-region: us-east-1
+          aws-region: eu-central-1
 
       - name: Verify caller identity
         run: aws sts get-caller-identity
